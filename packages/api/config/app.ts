@@ -27,6 +27,12 @@ import type { ValidatorConfig } from '@ioc:Adonis/Core/Validator'
 */
 export const appKey: string = Env.get('APP_KEY')
 
+export const google = {
+  clientId: Env.get('GOOGLE_CLIENT_ID'),
+  clientSecret: Env.get('GOOGLE_CLIENT_SECRET'),
+  redirectUri: Env.get('GOOGLE_REDIRECT_URI'),
+}
+
 /*
 |--------------------------------------------------------------------------
 | Http server configuration
@@ -231,4 +237,5 @@ export const profiler: ProfilerConfig = {
 | to the default config https://git.io/JT0WE
 |
 */
-export const validator: ValidatorConfig = {}
+export const validator: ValidatorConfig = {
+}
