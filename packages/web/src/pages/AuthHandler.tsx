@@ -11,7 +11,7 @@ function AuthHandler()
         if (token) {
             auth.signIn({}, token)
         } else {
-            window.location.href = '/'
+            window.location.href = '/admin/document'
         }
     }, [])
 

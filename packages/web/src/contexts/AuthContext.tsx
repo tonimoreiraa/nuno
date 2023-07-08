@@ -36,7 +36,7 @@ export function AuthProvider(props: any) {
     function signIn(user: UserType|any, t: string) {
         setToken(t)
         setUserData(user)
-        window.location.href = '/'
+        window.location.href = '/admin/document'
     }
 
     function signOut() {
